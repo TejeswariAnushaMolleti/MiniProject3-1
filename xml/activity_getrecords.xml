@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/logo_bg"
+    tools:context=".getrecords">
+
+    //text view to display information of what format of data to enter
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:textColor="#000"
+        android:text="For monthly reports give input as yyyy.mm"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_marginTop="5dp"
+        android:textColor="#000"
+        android:text="For a particular day reports give input as yyyy.mm.dd"/>
+
+    //edit text to enter the date of which the records are needed
+    <EditText
+        android:layout_width="280dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:background="@drawable/tve"
+        android:layout_height="55dp"
+        android:hint="YYYY . MM . DD"
+        android:textSize="26sp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/et1"/>
+
+    //edit text to enter the date of which the records are needed
+    <EditText
+        android:layout_width="280dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:background="@drawable/tve"
+        android:layout_height="55dp"
+        android:hint="enter subject"
+        android:textSize="26sp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/et2"/>
+
+    //button to fetch the details from database
+    <Button
+        android:layout_width="300dp"
+        android:layout_gravity="center"
+        android:text="FETCH"
+        android:background="@drawable/resetbtn"
+        android:layout_height="58dp"
+        android:layout_marginTop="40dp"
+        android:onClick="getrecs"/>
+
+    //list view where the details fetched are shown
+    <ListView
+        android:id="@+id/lv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

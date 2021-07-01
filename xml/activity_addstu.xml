@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/logo_bg"
+    tools:context=".addstu">
+
+    <EditText
+        android:id="@+id/codetoadd"
+        android:layout_width="342dp"
+        android:layout_height="89dp"
+        android:textSize="28sp"
+        android:gravity="center"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="36dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="25dp" />
+
+    <EditText
+    android:id="@+id/et1"
+    android:layout_width="342dp"
+    android:layout_height="89dp"
+    android:textSize="28sp"
+    android:gravity="center"
+    android:layout_alignParentLeft="true"
+    android:layout_marginLeft="36dp"
+    android:layout_alignParentTop="true"
+    android:layout_marginTop="25dp"
+    android:background="@drawable/tve"/>
+
+    <EditText
+        android:id="@+id/et2"
+        android:layout_width="342dp"
+        android:layout_height="89dp"
+        android:textSize="28sp"
+        android:gravity="center"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="36dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/tve"/>
+
+    <EditText
+        android:id="@+id/et3"
+        android:layout_width="342dp"
+        android:layout_height="89dp"
+        android:textSize="28sp"
+        android:gravity="center"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="36dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/tve"/>
+
+    <Button
+        android:id="@+id/addstud"
+        android:layout_marginTop="55dp"
+        android:layout_gravity="center"
+        android:layout_width="342dp"
+        android:layout_height="64dp"
+        android:gravity="center"
+        android:text="add_students"
+        android:textColor="#fff"
+        android:background="@drawable/btne"/>
+
+</LinearLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fff"
+    tools:context=".Main2Activity">
+
+
+    //image for the student-login
+    <ImageView
+        android:id="@+id/stu"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:onClick="stu"
+        android:src="@drawable/students"/>
+
+    //image for the faculty-login
+    <ImageView
+        android:id="@+id/fac"
+        android:onClick="fac"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:src="@drawable/teacher"/>
+</LinearLayout>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:background="#fff"
+    tools:context=".subcode">
+
+    //text view showing success of attendance marked
+    <TextView
+        android:layout_width="342dp"
+        android:gravity="center"
+        android:layout_height="62dp"
+        android:text="Attendance Marked"
+        android:textColor="#fff"
+        android:background="@drawable/sbtne" />
+    <LinearLayout
+        android:layout_marginTop="40dp"
+        android:layout_width="342dp"
+        android:layout_height="343dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:background="@drawable/sublay">
+       <!-- android:background="@drawable/btne">-->
+
+
+        //image of student
+        <ImageView
+            android:layout_width="128dp"
+            android:layout_height="128dp"
+            android:src="@drawable/girlsquare"
+            android:layout_gravity="center"/>
+
+        //text view for showing id-number
+      <TextView
+            android:layout_width="342dp"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:id="@+id/id_num"
+            android:text="id number"
+            android:textColor="#fff"/>
+
+        //text view for showing the name
+        <TextView
+            android:layout_width="342dp"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:hint="name"
+            android:id="@+id/name"
+            android:textColor="#fff"/>
+
+        //text view for showing the class
+        <TextView
+            android:layout_width="342dp"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:text="class"
+            android:id="@+id/cls"
+            android:textColor="#fff"/>
+
+        //text view for showing the time-stamp
+        <TextView
+            android:layout_width="342dp"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:id="@+id/timed"
+            android:textColor="#fff"/>
+
+</LinearLayout>
+
+    //button for sign-out
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:onClick="signout"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="22dp"
+        android:background="@drawable/signout"
+        android:text="Sign out"/>
+
+</LinearLayout>

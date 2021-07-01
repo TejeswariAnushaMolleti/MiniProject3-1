@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fff"
+    tools:context=".percentage">
+
+    //text view displaying some text
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="100dp"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:text="Doing Great Keep Going!"
+        android:id="@+id/tv1"/>
+
+    //pie-chart to show attendance percentage
+    <com.anychart.AnyChartView
+        android:layout_gravity="center"
+        android:layout_marginTop="80dp"
+        android:layout_width="400dp"
+        android:layout_height="400dp"
+        android:id="@+id/any_chart"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:id="@+id/tv2"/>
+
+</LinearLayout>

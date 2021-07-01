@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/logo_bg"
+    tools:context=".Main3Activity">
+
+    //image for the student-sample
+    <ImageView
+        android:contentDescription="image"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/girl"
+        tools:ignore="HardcodedText" />
+
+    //title below the image
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="ATTENDANCE MANAGEMENT SYSTEM"
+        android:textSize="18sp"
+        android:textColor="#5ba7d9"
+        tools:ignore="HardcodedText,RtlSymmetry" />
+
+    //linear layout for the rest of the things to be placed
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:paddingStart="30dp"
+        android:paddingEnd="30dp"
+        android:paddingTop="10dp">
+
+        //text view for the email text
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="EMAIL"
+            android:textSize="13sp"
+            android:textColor="#5C5454"
+            tools:ignore="HardcodedText" />
+
+        //edit text to enter the email
+        <EditText
+            android:inputType="textEmailAddress"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/tve"
+            android:hint="Enter your email"
+            android:paddingStart="15dp"
+            android:id="@+id/et_email"
+            android:textColor="#5C5454"
+            tools:ignore="Autofill,HardcodedText,RtlHardcoded,RtlSymmetry,TextFields" />
+
+        //text view for the password
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="PASSWORD"
+            android:textSize="13sp"
+            android:textColor="#5C5454"
+            tools:ignore="HardcodedText" />
+
+        //edit text for the password field
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/tve"
+            android:hint="Enter your password"
+            android:paddingStart="15dp"
+            android:id="@+id/et_password"
+            android:textColor="#5C5454"
+            tools:ignore="Autofill,HardcodedText,RtlHardcoded,RtlSymmetry,TextFields" />
+
+        //text view for forgot password
+        <TextView
+            android:id="@+id/forgot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Forgot Password?"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="end"
+            android:clickable="true"
+            tools:ignore="HardcodedText" />
+
+        //submit button-to log-in
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/btne"
+            android:text="Log In"
+            android:id="@+id/bt_submit"
+            android:textColor="#fff"
+            tools:ignore="HardcodedText"/>
+
+        //linear layout
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="5dp"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            //text view showing the text "new_member?"
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Member?"
+                tools:ignore="HardcodedText" />
+
+            //button to go to sign-up layout if new member
+            <Button
+                android:id="@+id/signup"
+                android:onClick="signup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:layout_marginStart="4dp"
+                android:textColor="#5ba7d9"
+                android:text="Sign Up"
+                tools:ignore="HardcodedText" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
